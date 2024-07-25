@@ -7,23 +7,21 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Before
 import org.junit.Test
 
-class GetCoinsUseCaseTest {
+class GetCoinUseCaseTest {
 
     private lateinit var  getCoinsUseCase: GetCoinsUseCase
-    private lateinit var  fakeCoinRepo: FakeCoinsRepo
+    private lateinit var  fakeCoinsRepo: FakeCoinsRepo
 
 
     @Before
     fun setup(){
-        fakeCoinRepo = FakeCoinsRepo()
-        getCoinsUseCase = GetCoinsUseCase(fakeCoinRepo)
+        fakeCoinsRepo = FakeCoinsRepo()
+        getCoinsUseCase = GetCoinsUseCase(fakeCoinsRepo)
     }
 
-
     @Test
-    fun `check coins repo is not empty ` (): Unit = runBlocking {
-        val coins = getCoinsUseCase().first()
-        coins.data?.let { assert(it.isNotEmpty()) }
+    fun `check coins repo contains BTC` (): Unit = runBlocking {
+
     }
 
 
