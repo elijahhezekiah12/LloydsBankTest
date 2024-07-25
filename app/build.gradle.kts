@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")
+    alias(libs.plugins.dagger.hilt)
 }
 
 android {
@@ -59,13 +61,47 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
+
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+
+    // Local unit tests
+    testImplementation (libs.androidx.core)
+    testImplementation(libs.junit)
+    testImplementation (libs.androidx.core.testing)
+    testImplementation (libs.kotlinx.coroutines.test)
+    testImplementation (libs.truth)
+    testImplementation (libs.mockwebserver)
+    testImplementation (libs.mockk)
+    debugImplementation (libs.ui.test.manifest)
+
+
+    // Compose dependencies
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+    implementation (libs.androidx.navigation.compose)
+    implementation (libs.accompanist.flowlayout)
+
+
+    //Dagger - Hilt
+    implementation (libs.hilt.android)
+    kapt (libs.hilt.android.compiler)
+    kapt (libs.androidx.hilt.compiler)
+    implementation (libs.androidx.hilt.navigation.compose)
+
+
+
+    // Retrofit
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.okhttp)
+    implementation (libs.logging.interceptor)
+
 
 
 

@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.ui.theme
+package com.ElijahHezekiah.lloydsbanktest.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
