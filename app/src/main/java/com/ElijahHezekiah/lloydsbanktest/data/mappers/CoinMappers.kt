@@ -1,9 +1,9 @@
-package com.ElijahHezekiah.lloydsbanktest.data.mappers
+package com.elijahhezekiah.lloydsbanktest.data.mappers
 
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDetailDto
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDto
-import com.ElijahHezekiah.lloydsbanktest.domain.model.Coin
-import com.ElijahHezekiah.lloydsbanktest.domain.model.CoinDetail
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDetailDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDto
+import com.elijahhezekiah.lloydsbanktest.domain.model.Coin
+import com.elijahhezekiah.lloydsbanktest.domain.model.CoinDetail
 
 fun CoinDetailDto.toCoinDetail(): CoinDetail {
     return CoinDetail(

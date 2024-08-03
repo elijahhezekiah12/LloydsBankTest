@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.coin_detail.components
+package com.elijahhezekiah.lloydsbanktest.presentation.coin_detail.components
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box

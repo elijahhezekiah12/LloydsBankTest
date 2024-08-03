@@ -1,6 +1,6 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.coin_list
+package com.elijahhezekiah.lloydsbanktest.presentation.coin_list
 
-import com.ElijahHezekiah.lloydsbanktest.domain.model.Coin
+import com.elijahhezekiah.lloydsbanktest.domain.model.Coin
 
 data class CoinListState(
     val isLoading: Boolean = false,

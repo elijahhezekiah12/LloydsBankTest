@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.ui.theme
+package com.elijahhezekiah.lloydsbanktest.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

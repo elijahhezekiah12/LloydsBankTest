@@ -1,9 +1,9 @@
-package com.ElijahHezekiah.lloydsbanktest.data.repository
+package com.elijahhezekiah.lloydsbanktest.data.repository
 
-import com.ElijahHezekiah.lloydsbanktest.data.CoinPaprikaApi
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDetailDto
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDto
-import com.ElijahHezekiah.lloydsbanktest.domain.CoinRepository.CoinRepository
+import com.elijahhezekiah.lloydsbanktest.data.CoinPaprikaApi
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDetailDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDto
+import com.elijahhezekiah.lloydsbanktest.domain.coinRepository.CoinRepository
 import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(

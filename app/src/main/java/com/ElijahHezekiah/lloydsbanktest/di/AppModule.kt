@@ -1,9 +1,9 @@
-package com.ElijahHezekiah.lloydsbanktest.di
+package com.elijahhezekiah.lloydsbanktest.di
 
-import com.ElijahHezekiah.lloydsbanktest.common.Constants
-import com.ElijahHezekiah.lloydsbanktest.data.CoinPaprikaApi
-import com.ElijahHezekiah.lloydsbanktest.data.repository.CoinRepositoryImpl
-import com.ElijahHezekiah.lloydsbanktest.domain.CoinRepository.CoinRepository
+import com.elijahhezekiah.lloydsbanktest.common.Constants
+import com.elijahhezekiah.lloydsbanktest.data.CoinPaprikaApi
+import com.elijahhezekiah.lloydsbanktest.data.repository.CoinRepositoryImpl
+import com.elijahhezekiah.lloydsbanktest.domain.coinRepository.CoinRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.domain.model
+package com.elijahhezekiah.lloydsbanktest.domain.model
 
 data class Coin(
     val id: String,

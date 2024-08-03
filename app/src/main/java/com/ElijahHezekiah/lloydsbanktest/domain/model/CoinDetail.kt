@@ -1,6 +1,6 @@
-package com.ElijahHezekiah.lloydsbanktest.domain.model
+package com.elijahhezekiah.lloydsbanktest.domain.model
 
-import com.ElijahHezekiah.lloydsbanktest.data.dto.TeamMember
+import com.elijahhezekiah.lloydsbanktest.data.dto.TeamMember
 
 data class CoinDetail(
     val coinId: String,

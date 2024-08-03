@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.common
+package com.elijahhezekiah.lloydsbanktest.common
 
 object Constants {
 

@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation
+package com.elijahhezekiah.lloydsbanktest.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,9 +9,9 @@ import androidx.compose.material3.Surface
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.ElijahHezekiah.lloydsbanktest.Screen
-import com.ElijahHezekiah.lloydsbanktest.presentation.coin_detail.CoinDetailScreen
-import com.ElijahHezekiah.lloydsbanktest.presentation.coin_list.CoinListScreen
+import com.elijahhezekiah.lloydsbanktest.Screen
+import com.elijahhezekiah.lloydsbanktest.presentation.coin_detail.CoinDetailScreen
+import com.elijahhezekiah.lloydsbanktest.presentation.coin_list.CoinListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

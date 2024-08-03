@@ -51,6 +51,8 @@ android {
     }
 }
 
+
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -61,6 +63,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    testImplementation(libs.junit.junit)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -104,6 +107,10 @@ dependencies {
 
 
 
+
+    testImplementation (libs.mockk.android)
+    implementation(libs.mockk.android.v1135 )
+    testImplementation (libs.kotlinx.coroutines.test.v190rc)
 
 
 }

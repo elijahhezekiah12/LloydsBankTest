@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest
+package com.elijahHezekiah.lloydsbanktest
 
 import org.junit.Test
 

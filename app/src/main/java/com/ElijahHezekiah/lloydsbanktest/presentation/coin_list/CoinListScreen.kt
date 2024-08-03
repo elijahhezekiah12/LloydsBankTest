@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.coin_list
+package com.elijahhezekiah.lloydsbanktest.presentation.coin_list
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,8 +16,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.ElijahHezekiah.lloydsbanktest.Screen
-import com.ElijahHezekiah.lloydsbanktest.presentation.coin_list.components.CoinListItem
+import com.elijahhezekiah.lloydsbanktest.Screen
+import com.elijahhezekiah.lloydsbanktest.presentation.coin_list.components.CoinListItem
 
 @Composable
 fun CoinListScreen(

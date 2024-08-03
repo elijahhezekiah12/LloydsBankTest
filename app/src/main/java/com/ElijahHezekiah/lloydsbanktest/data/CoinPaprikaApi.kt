@@ -1,7 +1,7 @@
-package com.ElijahHezekiah.lloydsbanktest.data
+package com.elijahhezekiah.lloydsbanktest.data
 
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDetailDto
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDetailDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDto
 import retrofit2.http.GET
 import retrofit2.http.Path
 

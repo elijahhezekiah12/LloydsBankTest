@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest
+package com.elijahHezekiah.lloydsbanktest
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

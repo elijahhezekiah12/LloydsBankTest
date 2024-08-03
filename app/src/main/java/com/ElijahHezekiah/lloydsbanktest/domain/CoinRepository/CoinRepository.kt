@@ -1,7 +1,7 @@
-package com.ElijahHezekiah.lloydsbanktest.domain.CoinRepository
+package com.elijahhezekiah.lloydsbanktest.domain.coinRepository
 
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDetailDto
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDetailDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDto
 
 interface CoinRepository {
 

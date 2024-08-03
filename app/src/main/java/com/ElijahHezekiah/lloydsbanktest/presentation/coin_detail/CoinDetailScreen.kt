@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.coin_detail
+package com.elijahhezekiah.lloydsbanktest.presentation.coin_detail
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -25,8 +25,8 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.ElijahHezekiah.lloydsbanktest.presentation.coin_detail.components.CoinTag
-import com.ElijahHezekiah.lloydsbanktest.presentation.coin_detail.components.TeamListItem
+import com.elijahhezekiah.lloydsbanktest.presentation.coin_detail.components.CoinTag
+import com.elijahhezekiah.lloydsbanktest.presentation.coin_detail.components.TeamListItem
 import com.google.accompanist.flowlayout.FlowRow
 
 

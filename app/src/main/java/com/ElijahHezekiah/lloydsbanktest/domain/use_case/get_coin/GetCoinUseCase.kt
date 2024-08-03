@@ -1,10 +1,10 @@
-package com.ElijahHezekiah.lloydsbanktest.domain.use_case.get_coin
+package com.elijahhezekiah.lloydsbanktest.domain.use_case.get_coin
 
 import android.util.Log
-import com.ElijahHezekiah.lloydsbanktest.common.Resource
-import com.ElijahHezekiah.lloydsbanktest.data.mappers.toCoinDetail
-import com.ElijahHezekiah.lloydsbanktest.domain.CoinRepository.CoinRepository
-import com.ElijahHezekiah.lloydsbanktest.domain.model.CoinDetail
+import com.elijahhezekiah.lloydsbanktest.common.Resource
+import com.elijahhezekiah.lloydsbanktest.data.mappers.toCoinDetail
+import com.elijahhezekiah.lloydsbanktest.domain.coinRepository.CoinRepository
+import com.elijahhezekiah.lloydsbanktest.domain.model.CoinDetail
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException

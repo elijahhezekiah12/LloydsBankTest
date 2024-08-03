@@ -1,13 +1,18 @@
-package com.ElijahHezekiah.lloydsbanktest.Repositories
+package com.elijahHezekiah.lloydsbanktest.Repositories
 
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDetailDto
-import com.ElijahHezekiah.lloydsbanktest.data.dto.CoinDto
-import com.ElijahHezekiah.lloydsbanktest.data.dto.TeamMember
-import com.ElijahHezekiah.lloydsbanktest.domain.CoinRepository.CoinRepository
-import com.ElijahHezekiah.lloydsbanktest.domain.model.CoinDetail
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDetailDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.CoinDto
+import com.elijahhezekiah.lloydsbanktest.data.dto.Links
+import com.elijahhezekiah.lloydsbanktest.data.dto.LinksExtended
+import com.elijahhezekiah.lloydsbanktest.data.dto.Stats
+import com.elijahhezekiah.lloydsbanktest.data.dto.Tag
+import com.elijahhezekiah.lloydsbanktest.data.dto.TeamMember
+import com.elijahhezekiah.lloydsbanktest.data.dto.Whitepaper
+import com.elijahhezekiah.lloydsbanktest.domain.coinRepository.CoinRepository
+import com.elijahhezekiah.lloydsbanktest.domain.model.CoinDetail
 
 
-class FakeCoinsRepo :CoinRepository{
+class FakeCoinsRepo : CoinRepository {
 
     val btc  = CoinDto( "btc-bitcoin",
      true,
@@ -97,6 +102,56 @@ class FakeCoinsRepo :CoinRepository{
 
     val teamMemberList = mutableListOf(TeamMember1,TeamMember2,TeamMember3,TeamMember4)
 
+    val explorer = mutableListOf( "https://blockchair.com/bitcoin/?from=coinpaprika",
+        "https://blockchain.com/explorer",
+        "https://blockstream.info/",
+        "https://live.blockcypher.com/btc/",
+        "https://btc.cryptoid.info/btc/")
+
+    val facebook = mutableListOf("")
+    val reddit = mutableListOf("")
+    val source_code = mutableListOf("")
+    val website = mutableListOf("")
+    val youtube = mutableListOf("")
+
+
+    val links  = Links(
+        explorer,
+        facebook,
+        reddit,
+        source_code,
+        website,
+        youtube
+    )
+
+    val stats  = Stats(
+        1,
+        1,
+        1,
+        1
+    )
+
+    val linksextended  = LinksExtended(
+        stats,
+        "explorer",
+         ""
+    )
+
+    val links_extended = mutableListOf(linksextended)
+
+    val whitepaper = Whitepaper(
+         "https://static.coinpaprika.com/storage/cdn/whitepapers/215.pdf",
+        "https://static.coinpaprika.com/storage/cdn/whitepapers/217.jpg"
+    )
+
+    val tag = Tag(
+        12,
+   0,"segwit",
+        "Segwit"
+    )
+
+    val Tags = mutableListOf(tag)
+
     val btcDetail = CoinDetail(
         "btc-bitcoin",
         "Bitcoin",
@@ -111,13 +166,43 @@ class FakeCoinsRepo :CoinRepository{
 
     )
 
+
+    val btcCoinDetialDto  =  CoinDetailDto(
+        "Bitcoin is a cryptocurrency and worldwide payment system. " +
+                "It is the first decentralized digital currency, " +
+                "as the system works without a central bank or single administrator.",
+        "Working product",
+        "2010-07-17T00:00:00Z",
+         true,
+        "SHA256",
+        "btc-bitcoin",
+        true,
+        false,
+        "2024-07-25T11:59:00Z",
+               links,
+             links_extended,
+        "",
+        "Bitcoin",
+        true,
+        "Decentralized",
+        "Proof of Work",
+        1,
+        "2009-01-03T00:00:00Z",
+                "BTC",
+             Tags,
+        teamMemberList,
+        "coin",
+        whitepaper
+
+    )
+
     override suspend fun getCoins(): List<CoinDto> {
         return listOfCoins
 
     }
 
     override suspend fun getCoinById(coinId: String): CoinDetailDto {
-        TODO("Not yet implemented")
+        return btcCoinDetialDto
     }
 
 

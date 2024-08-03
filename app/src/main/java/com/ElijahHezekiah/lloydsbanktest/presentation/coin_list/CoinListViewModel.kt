@@ -1,11 +1,11 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.coin_list
+package com.elijahhezekiah.lloydsbanktest.presentation.coin_list
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ElijahHezekiah.lloydsbanktest.common.Resource
-import com.ElijahHezekiah.lloydsbanktest.domain.use_case.get_coins.GetCoinsUseCase
+import com.elijahhezekiah.lloydsbanktest.common.Resource
+import com.elijahhezekiah.lloydsbanktest.domain.use_case.get_coins.GetCoinsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach

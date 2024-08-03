@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.coin_list.components
+package com.elijahhezekiah.lloydsbanktest.presentation.coin_list.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -15,7 +15,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.ElijahHezekiah.lloydsbanktest.domain.model.Coin
+import com.elijahhezekiah.lloydsbanktest.domain.model.Coin
 
 @Composable
 fun CoinListItem(

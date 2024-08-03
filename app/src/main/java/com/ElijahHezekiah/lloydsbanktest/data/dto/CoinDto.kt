@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.data.dto
+package com.elijahhezekiah.lloydsbanktest.data.dto
 
 
 import com.google.gson.annotations.SerializedName
