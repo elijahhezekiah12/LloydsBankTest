@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest.presentation.ui.theme
+package com.elijahhezekiah.lloydsbanktest.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

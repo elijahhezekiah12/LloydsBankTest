@@ -1,4 +1,4 @@
-package com.ElijahHezekiah.lloydsbanktest
+package com.elijahhezekiah.lloydsbanktest
 
 sealed class Screen(val route: String) {
     object CoinListScreen: Screen("coin_list_screen")
