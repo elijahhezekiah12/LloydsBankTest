@@ -78,8 +78,8 @@ class GetCoinsUseCaseTest {
         val listOfCoins = mutableListOf<CoinDto>(btc,eth,USDT,Binance,Solana)
 
         coEvery { getCoinsUseCase.invoke() } returns flowOf(Resource.Success( listOfCoins.map { it.toCoin() } ))
-        val coins = getCoinsUseCase().first().data
-        coins?.let { assert(it.isNotEmpty()) }
+        val coins = getCoinsUseCase().first().data ?: emptyList()
+        assert(coins.isNotEmpty())
     }
 
 
