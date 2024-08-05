@@ -10,7 +10,6 @@ import com.elijahhezekiah.lloydsbanktest.data.dto.Tag
 import com.elijahhezekiah.lloydsbanktest.data.dto.TeamMember
 import com.elijahhezekiah.lloydsbanktest.data.dto.Whitepaper
 import com.elijahhezekiah.lloydsbanktest.data.mappers.toCoinDetail
-import com.elijahhezekiah.lloydsbanktest.domain.model.CoinDetail
 import com.elijahhezekiah.lloydsbanktest.domain.use_case.get_coin.GetCoinUseCase
 import com.elijahhezekiah.lloydsbanktest.presentation.coin_detail.CoinDetailViewModel
 import io.mockk.coEvery
@@ -47,8 +46,6 @@ class CoinDetailViewModelTest {
 
 
 
-
-
     @Before
     fun setUp() {
 
@@ -78,16 +75,6 @@ class CoinDetailViewModelTest {
     fun getCoin() = runTest {
 
 
-        val listOfBitcoinTagsName = mutableListOf("segwitt",
-            "Cryptocurrency",
-            "proof of work",
-            "Payments",
-            "Sha256",
-            "Mining",
-            "Lightning Network",
-            "Layer 1 (L1)",
-            "FTX Holdings",
-        )
 
         val TeamMember1 = TeamMember(
             "satoshi-nakamoto",
@@ -166,19 +153,6 @@ class CoinDetailViewModelTest {
 
         val Tags = mutableListOf(tag)
 
-        val btcDetail = CoinDetail(
-            "btc-bitcoin",
-            "Bitcoin",
-            "Bitcoin is a cryptocurrency and worldwide payment system. " +
-                    "It is the first decentralized digital currency, " +
-                    "as the system works without a central bank or single administrator.",
-            "BTC",
-            1,
-            true,
-            listOfBitcoinTagsName ,
-            teamMemberList
-
-        )
 
 
         val btcCoinDetialDto  =  CoinDetailDto(
@@ -220,7 +194,7 @@ class CoinDetailViewModelTest {
 
    advanceUntilIdle()
 
-  assert(getSCoinVM.state.value.coin?.coinId.equals("btc-bitcoin"))
+   assert(getSCoinVM.state.value.coin?.coinId.equals("btc-bitcoin"))
 
     }
 }

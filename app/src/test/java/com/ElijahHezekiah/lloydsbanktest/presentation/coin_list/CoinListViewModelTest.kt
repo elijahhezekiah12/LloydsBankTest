@@ -115,6 +115,7 @@ class CoinListViewModelTest  {
 
         getSCoinsVM.state.value.coins = getCoinsUseCaseMK.invoke().first().data ?: emptyList()
 
+
         advanceUntilIdle()
 
         val coins = getSCoinsVM.state.value.coins
@@ -122,6 +123,8 @@ class CoinListViewModelTest  {
         assert(coins.isNotEmpty())
 
     }
+
+
 
 
 

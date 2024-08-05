@@ -27,3 +27,4 @@ class GetCoinsUseCase @Inject constructor(
         }
     }
 }
+
